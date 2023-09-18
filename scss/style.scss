@@ -270,6 +270,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.40s;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
 
     & img {
       width: 100%;
@@ -380,5 +385,162 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+}
+
+
+
+.service-box {
+  border-radius: 17px;
+  background: #FAFBFC;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20%;
+  transition: all 0.50s;
+  min-height: 354px;
+  margin-top: 2rem;
+
+  &:hover {
+    transform: translateY(-1.4rem);
+    box-shadow: 1px 4px 12px 0px #00000014;
+
+  }
+
+  & img {
+    width: 75px;
+    margin-top: 2rem;
+  }
+
+  & p {
+    color: #4A4A4A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+
+  & h1 {
+    color: #1C1D20;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+}
+
+// =========team-details========
+.team-details {
+  background: #F5F5F5;
+  margin-top: 8rem;
+}
+
+.team-det-ct {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  min-height: 80vh;
+
+  & p:nth-child(1) {
+    color: #3219B3;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  & h1 {
+    color: #05000B;
+    font-size: 49px;
+    font-weight: 700;
+
+    & span {
+      color: #3219B3;
+    }
+  }
+
+  & p:nth-child(3) {
+    color: #05000B;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
+    margin-top: 1rem;
+  }
+
+  & .company-progress {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  & .projects {
+    line-height: 4px;
+  }
+
+  & .projects h1 {
+    color: #05000B;
+    font-size: 52px;
+    font-weight: 700;
+    position: relative;
+    margin-left: 1rem;
+
+    &::before {
+      content: '';
+      border-left: 7px solid #3219B3;
+      height: 65%;
+      position: absolute;
+      top: 15%;
+      left: -1rem;
+    }
+
+    & .projects p {
+      color: #05000B;
+      opacity: 0.7;
+      font-size: 16px;
+      font-weight: 500;
+
+    }
+
+  }
+}
+
+.team-members {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 80vh;
+
+  & .team-det {
+    position: relative;
+  }
+
+  & .user-wrk {
+    border-radius: 14px;
+    border: 1px solid #EBEBEB;
+    background: #FFF;
+    position: absolute;
+    padding: 20px;
+    top: 85%;
+
+    & p {
+      color: #1C1D20;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    & button {
+      border-radius: 3px;
+      background: #E8EAEE;
+      border: none;
+      color: #7B7D81;
+      padding: 5px 8px;
+    }
+  }
+
+  & .background-image {
+    object-fit: contain;
+    position: absolute;
   }
 }
