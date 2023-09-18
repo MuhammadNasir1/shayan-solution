@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 .primary-color {
@@ -290,4 +291,51 @@ body {
       z-index: 0;
     }
   }
+}
+
+
+// ===========learnmore==============
+
+.learnmore {
+
+  margin-top: 14rem;
+}
+
+.lm-content {
+ margin-top: 3rem;
+  & p:nth-child(1) {
+    font-size: 17px;
+    color: #3219B3;
+  }
+
+  & p:nth-child(3) {
+    color: #05000B;
+    opacity: 70%;
+    line-height: 25.6px;
+    margin-top: 1.6rem;
+  }
+
+  & h1 {
+    font-weight: 700;
+    font-size: 49px;
+    color: #05000B;
+  }
+
+  & ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+
+    padding: 0;
+
+    & li span {
+      font-weight: 600;
+      font-size: 20px;
+      margin-left: 12px;
+      color: #05000B;
+    }
+
+  }
+
+  
 }

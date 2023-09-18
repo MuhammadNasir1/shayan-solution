@@ -7,6 +7,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .primary-color {
@@ -233,4 +234,39 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   z-index: 0;
+}
+
+.learnmore {
+  margin-top: 14rem;
+}
+
+.lm-content {
+  margin-top: 3rem;
+}
+.lm-content p:nth-child(1) {
+  font-size: 17px;
+  color: #3219B3;
+}
+.lm-content p:nth-child(3) {
+  color: #05000B;
+  opacity: 70%;
+  line-height: 25.6px;
+  margin-top: 1.6rem;
+}
+.lm-content h1 {
+  font-weight: 700;
+  font-size: 49px;
+  color: #05000B;
+}
+.lm-content ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  padding: 0;
+}
+.lm-content ul li span {
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 12px;
+  color: #05000B;
 }/*# sourceMappingURL=style.css.map */
