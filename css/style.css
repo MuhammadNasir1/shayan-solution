@@ -716,6 +716,9 @@ footer .sec-2 a:hover {
   letter-spacing: 1px;
   color: white;
 }
+footer .last-sec {
+  margin-top: 4rem;
+}
 footer .last-sec p {
   color: #C0CDF7;
   font-size: 22px;
@@ -737,7 +740,7 @@ footer .copyright-sec {
   margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   justify-content: center;
 }
 footer .copyright-sec p {
