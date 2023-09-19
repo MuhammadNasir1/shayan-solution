@@ -222,7 +222,10 @@ body {
     padding: 0 1rem;
     border-radius: 4px;
     margin-top: 1rem;
-
+    padding-top: 8px;
+    &:focus {
+      outline: none;
+    }
   }
 
   & button {
