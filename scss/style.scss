@@ -509,7 +509,7 @@ body {
   align-content: center;
   justify-content: center;
   flex-direction: column;
-
+  overflow: hidden;
   min-height: 80vh;
 
   & .team-det {
@@ -543,6 +543,29 @@ body {
     object-fit: contain;
     position: absolute;
   }
+
+  & .background-image2 {
+    // object-fit: contain;
+    position: absolute;
+    width: 40vw;
+    right: 0;
+
+    
+  }
+
+  & .teammember {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+  
+  }
+  & .teammember2 {
+    position: absolute;
+    width: 100%;
+    left: 60%;
+    top: 10%;
+  }
+
 }
 
 
@@ -827,7 +850,7 @@ body {
   color: #05000B;
   font-size: 19px;
   font-weight: 600;
-    padding: 0;
+  padding: 0;
 }
 
 .profile-details .job {
