@@ -572,6 +572,71 @@ body {
   opacity: 0.7;
 }
 
+.about-video {
+  position: relative;
+  cursor: pointer;
+  transition: all 1s;
+  margin-top: 3rem;
+}
+.about-video video {
+  width: 100%;
+  height: 100%;
+}
+.about-video video::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.about-video video[poster] {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-video:hover .playicon {
+  transform: translatey(-10px);
+}
+.about-video .playicon {
+  transition: all 0.3s;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.work-det-sec {
+  background: #F5F5F5;
+  margin-top: 8rem;
+  padding: 5rem 0 2rem 0;
+}
+
+.work-det-contetn h1 {
+  color: #05000B;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 600;
+}
+.work-det-contetn p {
+  color: #05000B;
+  font-size: 16px;
+  font-weight: 400;
+}
+.work-det-contetn a {
+  color: #4E6DDF;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  float: right;
+}
+.work-det-contetn a i {
+  font-size: 12px;
+  margin-left: 6px;
+}
+
 .hiring-modal .hiring-dt-card {
   margin-top: 2rem;
   min-height: 361px;

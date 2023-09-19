@@ -17,3 +17,18 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".moveback",
   },
 });
+
+let video = document.querySelector("#aboutvido");
+let playicon = document.querySelector(".about-video  .playicon");
+let a = 1;
+video.addEventListener("click", () => {
+  if (a == 1) {
+    video.play();
+    playicon.style.visibility = "hidden";
+    a = 0;
+  } else {
+    video.pause();
+    playicon.style.visibility = "visible";
+    a = 1;
+  }
+});
